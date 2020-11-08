@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Blog Sidebar",
+    "id": "blog-sidebar"
+  },
+  {
+    "name": "Home Sidebar 1",
+    "id": "home-sidebar-1"
+  },
+  {
+    "name": "Home Sidebar 2",
+    "id": "home-sidebar"
+  },
+  {
+    "name": "GIẢI SOI KÈO HOT",
+    "id": "home-sidebar-center"
+  },
+  {
+    "name": "Home Top",
+    "id": "home-top"
+  }
+]

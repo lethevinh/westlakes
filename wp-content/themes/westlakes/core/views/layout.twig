@@ -1,0 +1,26 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" {{ site.language_attributes }}> <![endif]-->
+<!--[if IE 9]><html class="no-js no-svg ie ie9 lt-ie9 lt-ie8" {{ site.language_attributes }}> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js no-svg" {{ site.language_attributes }}> <!--<![endif]-->
+<head>
+    <meta charset="{{ site.charset }}" />
+    <meta name="description" content="{{ site.description }}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="pingback" href="{{ site.pingback_url }}" />
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    {% include ['snippets/font.twig', 'empty.twig'] %}
+    {{function('wp_head')}}
+    {% block head %}{% endblock %}
+    {% include ['snippets/head.twig', 'head.twig'] %}
+</head>
+<body class="{{body_class}}" data-spy="scroll" data-offset="80">
+{% include ['snippets/inner.twig', 'inner.twig'] %}
+{% block body %}
+    {% block content %}{% endblock %}
+{% endblock %}
+{{ function('wp_footer') }}
+{% include ['snippets/foot.twig', 'foot.twig'] %}
+{% block foot %}{% endblock %}
+</body>

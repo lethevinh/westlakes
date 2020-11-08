@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-xl-5 col-lg-6 mb-30">
+        <div class="lifestyle-img">
+            <a href="{{ post.link }}">
+                {#<img src="{{ post.thumbnail.src | resize(350,240) | default('https://via.placeholder.com/350x240') }}" alt="{{ post.title }}">#}
+                <img src="{{ site.theme.link }}/assets/images/40.jpg" alt="{{ post.title }}">
+            </a>
+        </div>
+    </div>
+    <div class="col-xl-7 col-lg-6 mb-30">
+        <div class="lifestyle-text lifestyle-04-text">
+            <span class="recent-cart color-5"><a href="{{ post.category.link }}">{{ post.category.title }}</a></span>
+            <h4><a href="{{ post.link }}">{{ post.title }}</a></h4>
+            <p>
+                {{ post.preview.length(40).read_more(' ') }}
+            </p>
+            <div class="post-content-meta">
+                <span><a class="meta-11" href="#"><i class="far fa-clock"></i> {{ ago(post.date('d-m-Y')) }}</a></span>
+                <span><a class="meta-11" href="#"><i class="far fa-comment"></i> ({{ post.comments | length }})</a></span>
+            </div>
+        </div>
+    </div>
+</div>

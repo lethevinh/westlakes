@@ -1,0 +1,15 @@
+<div class="author post-style-horizontal">
+    <div class="avatar">
+        <img class="lazy img-fluid" data-src="{{ author.avatar | default('/assets/images/author.jpg') }}"
+             alt="{{ author.name }}" src="{{ theme_url() }}/assets/images/dot.jpg">
+    </div>
+    <div class="author-info">
+        <p><b>Tác giả:</b> {{ author.name }}</p>
+        <p><b>Tham gia top soi kèo:</b> 07/02/2020</p>
+        <p><b>Bút tích: </b></p>
+        <p class="content_user">{{ author.description }}</p>
+        <p class="text-right">
+            <a class="detail-author" href="{{ author.link }}">Xem chi tiết</a>
+        </p>
+    </div>
+</div>

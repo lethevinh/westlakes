@@ -1,0 +1,32 @@
+<div class="col-lg-6 mb-30">
+    <div class="blog-item">
+        <div class="blog-img">
+            <div class="image-wrap">
+                <a href="{{post.link}}">
+                    <img src="{{post.thumbnail.src | resize(1200, 740) | default('https://via.placeholder.com/1200x740')}} " alt="{{post.title}}">
+                </a>
+            </div>
+            <div class="all-meta">
+                <div class="meta meta-date">
+                    <span class="month-day">{{ post.post_date|date('d') }}</span>
+                    <span class="month-name">{{ post.post_date|date('m') }}</span>
+                </div>
+                <div class="meta meta-author">
+                    <i class="flaticon-user-1"></i>
+                    <span class="author">{{ post.author.name }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="blog-content">
+            <h3 class="blog-title">
+                <a href="{{post.link}}">{{post.title}}</a>
+            </h3>
+            <div class="blog-desc">
+                {{ post.post_excerpt | truncate(25) }}
+            </div>
+            <div class="read-button">
+                <a href="{{ post.link }}">Xem Chi tiết</a>
+            </div>
+        </div>
+    </div>
+</div>

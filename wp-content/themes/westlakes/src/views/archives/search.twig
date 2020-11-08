@@ -1,0 +1,32 @@
+<section id="page-title" class="page-title-dark" style="padding: 250px 0; background-image: url('{{ site.theme.link }}/assets/images/about/parallax.jpg'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 400px;" data-top-bottom="background-position:0px -500px;">
+    <div class="container clearfix">
+        <h1>Result Search: {{ function('get_search_query') }}</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ site.link }}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Search</li>
+        </ol>
+    </div>
+</section><!-- #page-title end -->
+<!-- Content
+============================================= -->
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+            <!-- Posts
+        ============================================= -->
+            <div id="posts" class="post-grid row grid-container gutter-40 clearfix" data-layout="fitRows">
+                {% for post in posts %}
+                    <div class="entry col-md-4 col-sm-6 col-12">
+                        {% include 'item/post.twig' %}
+                    </div>                {% endfor %}
+            </div><!-- #posts end -->
+            <div class="clear mt-5"></div>
+            <!-- Pagination
+        ============================================= -->
+            <div class="d-flex justify-content-between mt-5">
+                {% include 'snippets/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
+            </div>
+            <!-- .pager end -->
+        </div>
+    </div>
+</section><!-- #content end -->

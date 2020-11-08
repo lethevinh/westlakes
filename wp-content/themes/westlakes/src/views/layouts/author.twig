@@ -1,0 +1,22 @@
+{% extends 'layouts/theme.twig' %}
+{% block breadcrumb %}
+{% section 'breadcrumb' %}
+{% endblock %}
+{% block container %}
+<div class="rs-blog modify pt-100 md-pt-80 md-pb-80">
+    <div class="container">
+        <div class="pb-100 md-pb-74">
+            <div class="row">
+                <div class="col-lg-8 md-mb-50">
+                    {% block content %}{% endblock %}
+                </div>
+                <div class="col-lg-4 pl-40 md-pl-15">
+                    <div class="cl-sidebar">
+                    	{{sidebar}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

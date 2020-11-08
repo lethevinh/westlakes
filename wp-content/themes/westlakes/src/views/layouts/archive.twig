@@ -1,0 +1,12 @@
+{% extends 'layouts/theme.twig' %}
+{% block breadcrumb %}
+    {% if home %}
+        {% section 'slider' %}
+    {% endif %}
+    {% if not home %}
+        {% section 'breadcrumb' %}
+    {% endif %}
+{% endblock %}
+{% block container %}
+    {% block content %}{% endblock %}
+{% endblock %}

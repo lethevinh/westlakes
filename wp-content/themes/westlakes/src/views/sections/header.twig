@@ -1,0 +1,56 @@
+<section id="home" class="home_bg" style="background-image: url({{ theme_url() }}assets/images/1.png);  background-size:cover; background-position: center center;">
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12 col-xs-12">
+                <div class="hero-text mt-5 text-center">
+                    <img src="{{ theme_url() }}assets/images/logo.png" class="img-fluid mb-4" style="width: 360px" alt="">
+                    <div>
+                        <img  class="img-fluid lazy slider-text-img" src="{{ theme_url() }}assets/images/slider-text.png">
+                    </div>
+                    <br>
+                </div>
+            </div><!-- END COL-->
+            <div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+                <div class="register">
+                    <h4 class="login_register_title">
+                        * Đăng ký xem thông tin dự án
+                    </h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="Name"></label>
+                            <input class="form-control requiredField input-label o2o-name" data-val="true" data-val-required="Thông tin là bắt buộc nhập" id="Name" maxlength="50" name="Name" placeholder="Họ tên" type="text" value="" />
+                            <span class="field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="Phone"></label>
+                            <input class="form-control number-only o2o-phone" data-val="true" data-val-required="Thông tin là bắt buộc nhập" data-val-length="Số điện thoại không hợp lệ" data-val-length-max="13" data-val-length-min="10" data-val-regex="Số điện thoại không hợp lệ" data-val-regex-pattern="^[0-9]*$" data-val-requiredif="Thông tin là bắt buộc nhập." data-val-requiredif-comp="isequalto" data-val-requiredif-other="Email" data-val-requiredif-value="" id="Phone" maxlength="14" name="Phone" placeholder="Số điện thoại" type="number" value="" />
+                            <span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="Email"></label>
+                            <input class="form-control o2o-email" id="Email" maxlength="50" name="Email" placeholder="Địa chỉ email" type="email" value="" />
+                            <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group mbnone text-center">
+                            <button style="border: none;background-color: #D69F6F;font-weight: bold;color: white;font-weight: bold;" class="btn btn-register-bg btn-register-a red-bg" name="submit">Nhận thông tin</button>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- END COL-->
+        </div><!-- END ROW-->
+        <div class="row menu mt-md-5">
+            <div class="col-lg-12 wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="btn">
+                    <a href="/">TỔNG QUAN</a>
+                </div>
+                <div class="btn">
+                    <a href="/tin-tuc#tin-tuc">TIN TỨC</a>
+                </div>
+                <div class="btn">
+                    <a href="/tin-tuc#question_2222">HỎI ĐÁP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

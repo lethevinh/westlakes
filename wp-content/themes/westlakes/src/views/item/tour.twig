@@ -1,0 +1,33 @@
+
+<li class="data-match-item row {% if key%2==1 %} bg_gray {% endif %}">
+    <div class="data-match-footer_ col-md-4 p-2">
+        <div class="date text-center text-gradient">
+            <p class="name_l">{{ post.tour_name }}</p>
+            <p class="time_l">{{ post.tour_time | date('H:i') }}</p>
+            <p class="day_l">{{ post.tour_time | date('d/m/Y') }}</p>
+        </div>
+    </div>
+    <div class="data-match-body_ col-md-8 p-2">
+        <div class="row">
+            <div class="logo-home col-3">
+                <img class="lazy img-fluid " src="{{theme_url()}}/assets/images/dot.jpg" data-src="{{Image(post.tour_logo_a).src}}" alt="{{post.tour_name_a}}">
+                <div class="home-name text-center">{{post.tour_name_a}}</div>
+            </div>
+            <div class="data-match-bet col-6 text-center">
+                <p class="mb-1"><span class="font-weight-bold">{{post.tour_scale_a}}</span> <span>(Châu Á)</span></p>
+                <p class="mb-1"><span class="font-weight-bold">{{post.tour_scale_au}}</span> <span>(Châu Âu)</span></p>
+                <p class="mb-1"><span class="font-weight-bold">{{post.tour_scale_tx}}</span> <span>(Tài xỉu)</span></p>
+                <p>
+                    <a class="btn-theme-reverse btn btn-primary sk book_btm newWindow" href="{{ post.link }}">Soi kèo</a>
+                    <a class="btn-theme-reverse btn btn-primary sk newWindow" href="https://www.zbet.win/?utm_source=soikeobong.com&utm_medium=M_NutDatCuoc&utm_campaign=CPD&utm_content=Home" target="_blank" rel="nofollow">
+                        Đặt cược
+                    </a>
+                </p>
+            </div>
+            <div class="logo-away col-3">
+                <img class="lazy img-fluid " src="{{theme_url()}}/assets/images/dot.jpg" data-src="{{Image(post.tour_logo_b).src}}" alt="{{post.tour_name_b}}">
+                <div class="away-name text-center">{{post.tour_name_b}}</div>
+            </div>
+        </div>
+    </div>
+</li>

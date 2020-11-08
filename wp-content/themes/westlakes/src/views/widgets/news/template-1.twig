@@ -1,0 +1,32 @@
+<div class="no-padding-right news_right_sidebar">
+    {% if title != '' or category.title != '' %}
+    <h2 class="heading_cat_home" style="margin-top: 10px;">
+        <span>{{ title }}</span>
+    </h2>
+    {% endif %}
+    <div class="hot_news_right">
+        <div class="overly-bg"></div>
+        <div class="content_news_right">
+            <ul class="fa-ul">
+                {% for key,post in posts|slice(0, 9) %}
+                    {% set classNum = 'green_btn' %}
+                    {% if key > 3 %}
+                        {% set classNum = 'gray_btn' %}
+                    {% endif %}
+                    <li>
+                        <a href="{{ post.link }}" class="row m-0">
+                            <div class="col-2 info_r_news no-padding-left no-padding-right">
+                                <span class="time {{ classNum }}">0{{ key + 1}}</span>
+                            </div>
+                            <div class="col-10 title_r_new">
+                                <span>
+                                    {{ post.title}}
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

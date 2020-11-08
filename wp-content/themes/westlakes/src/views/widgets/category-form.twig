@@ -1,0 +1,25 @@
+<div>
+    <label for="{{widget.get_field_id( 'title' )}}">
+        {{_e( 'Title:' )}}
+    </label>
+    <input class="widefat" id="{{widget.get_field_id( 'title' )}}" name="{{widget.get_field_name( 'title' )}}" type="text" value="{{value_title}}" />
+
+    <label for="{{widget.get_field_id( 'category' )}}">
+        {{_e( 'category:' )}}
+    </label>
+    <textarea class="widefat" id="{{widget.get_field_id( 'category' )}}" name="{{widget.get_field_name( 'category' )}}" value="{{value_category}}" cols="30" rows="3">
+        {{value_category}}
+    </textarea>
+    <label for="{{widget.get_field_id( 'category' )}}">
+        {{_e( 'template:' )}}
+    </label>
+    <select class="widefat" id="{{widget.get_field_id( 'template' )}}" name="{{widget.get_field_name( 'template' )}}" value="{{value_template}}">
+        {% for template in templates  %}
+            {% if template.key == value_template %}
+                <option selected value="{{ template.key }}">{{ template.value }}</option>
+            {% else %}
+                <option value="{{ template.key }}">{{ template.value }}</option>
+            {% endif %}
+        {% endfor %}
+    </select>
+</div>

@@ -1,0 +1,21 @@
+{
+    "name": "soi-keo-bong",
+    "class": {
+        "body" : "stretched",
+        "menu_active": "active"
+    },
+    "logo": {
+        "width": 200,
+        "height": 75
+    },
+    "menus": [
+        {
+            "name": "main",
+            "label": "Main Menu"
+        },
+        {
+            "name": "footer",
+            "label": "Footer Menu"
+        }
+    ]
+}

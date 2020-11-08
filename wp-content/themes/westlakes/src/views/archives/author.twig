@@ -1,0 +1,117 @@
+<div class="tpl-index">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                {% include 'item/author-card.twig' %}
+                <main class="arena">
+                    <!--Soi kèo-->
+                    <section class="section section-bet-data">
+                        <div class="section-head">
+                            <h2><a href="#">{{ title }}</a></h2>
+                        </div>
+                        <div class="section-body">
+                            {% for post in posts %}
+                                {% if loop.index == 1 %}
+                                    <article class="post-style-horizontal">
+                                        <div class="post-thumbnail">
+                                            <a href="{{ post.link }}">
+                                                <img class="img-fluid lazy"
+                                                     src="{{theme_url()}}/assets/images/dot.jpg"
+                                                     data-src="{{ post.thumbnail.src | resize(416,235) }}"
+                                                     alt="{{ post.title }}s">
+                                            </a>
+                                        </div>
+                                        <div class="post-meta">
+                                            <h3 class="post-title">
+                                                <a href="{{ post.link }}">
+                                                    {{ post.title }}
+                                                </a>
+                                            </h3>
+                                            <div class="post-info">
+                                                <div class="post-info-meta">
+                                                    <a class="post-category"
+                                                       href="{{ post.category.link }}">{{ post.category.title }}</a>
+                                                    <span> - </span> <span
+                                                            class="post-time">{{ post.date('d/m/Y H:s') }}</span>
+                                                </div>
+                                                <div class="post-excerpt">
+                                                    <p>{{ post.preview.length(40).read_more(' ') }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                {% endif %}
+                            {% endfor %}
+                            <section class="post-carousel owl-theme owl-carousel" style="margin-bottom: 15px;">
+                                {% for post in posts %}
+                                    {% if loop.index > 1 and  loop.index < 5 %}
+                                        <div class="item">
+                                            <article class="post-style-vertical">
+                                                <div class="post-thumbnail">
+                                                    <a href="{{ post.link }}">
+                                                        <img class="lazy img-fluid"
+                                                             src="{{theme_url()}}/assets/images/dot.jpg"
+                                                             data-src="{{ post.thumbnail.src | resize(220,140) }}"
+                                                             alt=" {{ post.title }}">
+                                                    </a>
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3 class="post-title">
+                                                        <a href="{{ post.link }}">
+                                                            {{ post.title }}
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </section>
+                            {% for post in posts %}
+                                {% if loop.index > 4 %}
+                                    <article class="post-style-horizontal data_cate">
+                                        <div class="post-thumbnail">
+                                            <a href="{{ post.link }}">
+                                                <img class="lazy img-fluid"
+                                                     src="{{theme_url()}}/assets/images/dot.jpg"
+                                                     data-src="{{ post.thumbnail.src | resize(416,235) }}"
+                                                     alt="{{ post.title }}" style="">
+                                            </a>
+
+                                        </div>
+                                        <div class="post-meta">
+                                            <h3 class="post-title">
+                                                <a href="{{ post.link }}">
+                                                    {{ post.title }}
+                                                </a>
+                                            </h3>
+                                            <div class="post-info">
+                                                <div class="post-info-meta">
+                                                    <a class="post-category" href="{{ post.category.link }}">
+                                                        {{ post.category.title }}
+                                                    </a>
+                                                    <span> - </span> <i class="icofont-clock-time mr-2 mb-2"></i>
+                                                    <span class="post-time">{{ post.date('d/m/Y') }}</span>
+                                                </div>
+                                                <div class="post-excerpt">
+                                                    <p>{{ post.preview.length(40).read_more(' ') }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                {% endif %}
+                            {% endfor %}
+                            {% include 'snippets/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
+                        </div>
+                    </section>
+                    <!--Soi kèo-->
+                </main>
+            </div>
+            <div class="col-12 col-md-4">
+                <aside class="sidebar">
+                    {% sidebar 'blog-sidebar' %}
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>

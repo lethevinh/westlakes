@@ -1,0 +1,1 @@
+window.viTheme = window.viTheme || {};

@@ -1,0 +1,57 @@
+<section class="section section-game-data post-section-custom">
+    {% if title == '' %}
+    <div class="section-head">
+        <h2> <a href="{{ category.link }}">{{ category.title }}</a> </h2>
+    </div>
+    {% endif %}
+    <div class="section-body">
+        <div class="section-list-game p-0">
+            <section class="list-game-left col-md-8 p-0">
+                <article class="game-style-vertical h-100">
+                    <div class="post-thumbnail h-100 gradient-background g-red">
+                        <a href="{{ posts[0].link }}">
+                            <img class="lazy img-fluid h-100" src="{{ theme_url() }}/assets/images/dot.jpg" data-src="{{ posts[0].thumbnail.src | resize(416,235)}}" alt="{{ posts[0].title }}" style="border-radius: 0">
+                        </a>
+                    </div>
+                    <div class="post-meta">
+                        <h3 class="post-title mb-0">
+                            <a href="{{ posts[0].link }}" class="text-white">
+                                {{ posts[0].title }}
+                            </a>
+                        </h3>
+                        <div class="post-info">
+                            <div class="post-info-meta">
+                                <a class="post-category text-white" href="{{ category.link }}">
+                                    {{ category.title }}
+                                </a> <span> - </span> <span class="post-time text-white">{{ posts[0].date('d/m/Y H:s') }}</span>
+                            </div>
+                            <div class="post-excerpt text-white">
+                                <p>
+                                    {{ posts[0].preview.length(40).read_more(' ') }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="list-game-right p-2 col-md-4">
+                {% for post in posts| slice(1, 5) %}
+                <article class="game-style-horizontal mb-0">
+                    <div class="post-thumbnail">
+                        <a href=" {{ post.title }}">
+                            <img class="lazy img-fluid" src="{{ theme_url() }}/assets/images/dot.jpg" data-src="{{ post.thumbnail.src | resize(220,140) }}" alt="{{ post.title }}" style="border-radius: 0;height: 75px">
+                        </a>
+                    </div>
+                    <div class="post-info">
+                        <h3 class="post-title">
+                            <a href=" {{ post.link }}">
+                               {{ post.title }}
+                            </a>
+                        </h3>
+                    </div>
+                </article>
+                {% endfor %}
+            </section>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "phone",
+    "title": "Phone",
+    "type": "text"
+  },
+  {
+    "id": "email",
+    "title": "Email",
+    "type": "email"
+  },
+  {
+    "id": "address",
+    "title": "Address",
+    "type": "text"
+  },
+  {
+    "id": "footer_description",
+    "title": "Description",
+    "type": "textarea"
+  },
+  {
+    "id": "facebook",
+    "title": "Facebook",
+    "type": "text"
+  },
+  {
+    "id": "twitter",
+    "title": "twitter",
+    "type": "text"
+  },
+  {
+    "id": "youtube",
+    "title": "youtube",
+    "type": "text"
+  },
+  {
+    "id": "instagram",
+    "title": "instagram",
+    "type": "text"
+  },
+  {
+    "id": "linkedin",
+    "title": "linkedin",
+    "type": "text"
+  },
+  {
+    "id": "map",
+    "title": "Map",
+    "type": "text"
+  }, {
+    "id": "logo",
+    "title": "Logo",
+    "type": "text"
+  }
+]

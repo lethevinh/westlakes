@@ -1,0 +1,24 @@
+<div class="post-block">
+        {% for post in category.posts(5) %}
+            <article class="post-style-vertical">
+                <div class="post-thumbnail">
+                    <a href="{{ post.link }}">
+                        <img class="lazy img-fluid" src="{{theme_url()}}/assets/images/dot.jpg"
+                             data-src="{{ post.thumbnail.src | resize(284,160) }}" alt=" {{ post.title }}">
+                    </a>
+                </div>
+                <h3 class="post-title-thin">
+                    <a href="{{ post.link }}">
+                        {{ post.title }}
+                    </a>
+                </h3>
+                <div class="post-info-meta">
+                    <a class="post-category" href=" {{ post.category.link }}">
+                        {{ post.category.title }}
+                    </a>
+                    <span> - </span>
+                    <span class="post-time">{{ ago(post.date('d-m-Y')) }}</span>
+                </div>
+            </article>
+        {% endfor %}
+</div>

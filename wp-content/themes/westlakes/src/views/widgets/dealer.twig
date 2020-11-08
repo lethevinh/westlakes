@@ -1,0 +1,28 @@
+<div class="list-dealer top-sidebar">
+    {% for key,post in posts %}
+        {% set medal = 'assets/images/medal_orange.png' %}
+        {% if key > 3 %}
+            {% set medal = 'assets/images/medal_blue.png' %}
+        {% endif %}
+    <article class="dealer-item">
+        <div class="dealer-head">
+            <div class="dealer-position">
+                <div class="dealer-medal"> <span>{{ key + 1 }}</span>
+                    <img src="{{ theme_url() }}{{ medal }}" alt="{{ post.title }}">
+                </div>
+            </div>
+            <div class="dealer-logo">
+                <a href="{{ post.link }}" rel="nofollow">
+                    <img class="lazy img-fluid" src="{{ theme_url()}}/assets/images/dot.jpg" data-src="{{ post.thumbnail.src }}" alt="SV88 - Nhà cái cá cược uy tín"> </a>
+            </div>
+            <div class="dealer-info"> <a class="dealer-text" rel="nofollow" target="_blank" href="{{ post.link }}">
+                {{ post.title }} </a> <span class="star" data-star="5"></span> </div>
+        </div>
+        <div class="dealer-desc"> {{ post.text_promo}} </div>
+        <div class="dealer-button">
+            <a class="btn-theme" href="{{ post.dealer_link.url }}?a=SV88_CPD_B&utm_source={{ site.link }}&utm_medium=BXH&utm_campaign=CPD&utm_content=Home" target="_blank" rel="nofollow">Cược ngay</a>
+            <a class="btn-theme-reverse" href="{{ post.link }}">Xem review</a>
+        </div>
+    </article>
+    {% endfor %}
+</div>

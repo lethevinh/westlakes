@@ -1,0 +1,17 @@
+{
+  "admin": {
+    "scripts": [
+      "admin"
+    ],
+    "styles": ["admin"]
+  },
+  "theme": {
+    "scripts": [
+      "require",
+      "theme"
+    ],
+    "styles": [
+      "theme"
+    ]
+  }
+}

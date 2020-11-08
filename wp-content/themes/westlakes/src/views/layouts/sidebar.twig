@@ -1,0 +1,16 @@
+{% extends 'layouts/theme.twig' %}
+{% block breadcrumb %}
+    {% section 'breadcrumb' %}
+{% endblock %}
+{% block container %}
+    <main id="content">
+        <div class="container ">
+            <div class="col-sm-8">
+                {% block content %}{% endblock %}
+            </div>
+            <div class="col-sm-4">
+                {{ sidebar }}
+            </div>
+        </div>
+    </main>
+{% endblock %}

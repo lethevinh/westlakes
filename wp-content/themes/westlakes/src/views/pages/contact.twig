@@ -1,0 +1,87 @@
+<!-- Page Title
+    ============================================= -->
+<section id="page-title" class="page-title-dark" style="padding: 250px 0; background-image: url('{{site.theme.link}}/assets/images/about/parallax.jpg'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 400px;" data-top-bottom="background-position:0px -500px;">
+    <div class="container clearfix">
+        <h1>Contact</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ site.link }}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+    </div>
+</section><!-- #page-title end -->
+<!-- Content
+============================================= -->
+<section id="content">
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row gutter-40 col-mb-80">
+                <!-- Sidebar
+============================================= -->
+                <div class="sidebar col-lg-4">
+                    {{ post.content |  raw }}
+                </div><!-- .sidebar end -->
+                <!-- Postcontent
+            ============================================= -->
+                <div class="postcontent col-lg-8">
+                    <h3>Send us an Email</h3>
+                    <div class="form-widget">
+                        <div class="form-result"></div>
+                        <form class="mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+                            <div class="form-process">
+                                <div class="css3-spinner">
+                                    <div class="css3-spinner-scaler"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <label for="template-contactform-name">Name <small>*</small></label>
+                                    <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label for="template-contactform-email">Email <small>*</small></label>
+                                    <input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label for="template-contactform-phone">Phone</label>
+                                    <input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col-md-12 form-group">
+                                    <label for="template-contactform-name">Topic <small>*</small></label>
+                                    <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+                                </div>
+                                <div class="col-12 form-group">
+                                    <label for="template-contactform-message">Message <small>*</small></label>
+                                    <textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+                                </div>
+                                <div class="col-12 form-group d-none">
+                                    <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+                                </div>
+                                <div class="col-12 form-group">
+                                    <button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+                                </div>
+                            </div>
+                            <input type="hidden" name="prefix" value="template-contactform-">
+                        </form>
+                    </div>
+                </div><!-- .postcontent end -->
+            </div>
+            <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="name">HA NOI OFFICE:</h4>
+                        <p class="des">198 Nguyen Tuan Street, Nhan Chinh Ward, Thanh Xuan District, Hanoi City, Vietnam.</p>
+                        <div class="ifm_map embed-responsive embed-responsive-4by3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7869090531376!2d105.79946021450421!3d21.001177286013412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca330e652bd%3A0x634e28eadd92a26c!2zMTk4IE5ndXnhu4VuIFR1w6JuLCBOaMOibiBDaMOtbmgsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1535605430633" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="name">HO CHI MINH OFFICE:</h4>
+                        <p class="des">215D8 Nguyen Van Huong Street, Thao Dien Ward, District 2, Ho Chi Minh City, Vietnam.</p>
+                        <div class="ifm_map embed-responsive embed-responsive-4by3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9888482623037!2d106.72995981435078!3d10.812164892297268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752623aa3776e1%3A0xce2c2de6d356c38b!2zMjE1IE5ndXnhu4VuIFbEg24gSMaw4bufbmcsIFRo4bqjbyDEkGnhu4FuLCBRdeG6rW4gMiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1535605914516" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section><!-- #content end -->

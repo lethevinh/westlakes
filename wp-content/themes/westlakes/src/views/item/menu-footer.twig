@@ -1,0 +1,7 @@
+<ul id="menu-footer2" class="menu-footer2">
+    {% for item in items %}
+        <li>
+            <a ref="nofollow" href="{{ item.link }}" title="{{ item.title }}">{{ item.title }}</a>
+        </li>
+    {% endfor %}
+</ul>

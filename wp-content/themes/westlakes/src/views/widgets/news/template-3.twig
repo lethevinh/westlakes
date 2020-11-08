@@ -1,0 +1,66 @@
+<section class="section section-bet-data">
+    {% if title != '' %}
+    <div class="section-head">
+        <h1><a href="#">{{ title }}</a></h1>
+    </div>
+    {% endif %}
+    <div class="section-body">
+        {% for post in posts %}
+            {% if loop.index == 1 %}
+                <article class="post-style-horizontal">
+                    <div class="post-thumbnail ">
+                        <a href="{{ post.link }}">
+                            <img class="img-fluid lazy"
+                                 data-src="{{ post.thumbnail.src | resize(416,235) }}"
+                                 src="{{ theme_url() }}/assets/images/dot.jpg"
+                                 alt="{{ post.title }}s">
+                        </a>
+                    </div>
+                    <div class="post-meta">
+                        <h3 class="post-title">
+                            <a href="{{ post.link }}">
+                                {{ post.title }}
+                            </a>
+                        </h3>
+                        <div class="post-info">
+                            <div class="post-info-meta">
+                                <a class="post-category"
+                                   href="{{ post.category.link }}">{{ post.category.title }}</a>
+                                <span> - </span> <span
+                                        class="post-time">{{ post.date('d/m/Y H:s') }}</span>
+                            </div>
+                            <div class="post-excerpt">
+                                <p>{{ post.preview.length(40).read_more(' ') }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            {% endif %}
+        {% endfor %}
+        <section class="post-carousel owl-theme owl-carousel">
+            {% for post in posts %}
+                {% if loop.index > 1 and  loop.index < 5 %}
+                    <div class="item">
+                        <article class="post-style-vertical">
+                            <div class="post-thumbnail">
+                                <a href=" {{ post.link }}">
+                                    <img class="img-fluid lazy"
+                                         data-src="{{ post.thumbnail.src | resize(220, 140) }}"
+                                         src="{{ theme_url() }}/assets/images/dot.jpg"
+                                         alt=" {{ post.title }}">
+                                </a>
+                            </div>
+                            <div class="post-info">
+                                <h3 class="post-title">
+                                    <a href=" {{ post.link }}">
+                                        {{ post.title }}
+                                    </a>
+                                </h3>
+                            </div>
+                        </article>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </section>
+    </div>
+</section>

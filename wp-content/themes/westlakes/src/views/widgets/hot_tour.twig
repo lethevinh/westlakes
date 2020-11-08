@@ -1,0 +1,18 @@
+<div class="rs-pointtable no-overflow gaps bg3 bdru-4 mb-20 md-mb-10">
+    <div class="tournaments">
+        {% for category in categories %}
+        <div class="tournaments-item font-weight-bold widgets-border " style="background-color: {{category.meta('category_color')}}; ;">
+            <a href="{{category.link}}" style="color: #fff;">
+                <div class="row">
+                    <div class="col-3 col-md-3">
+                        <img src="{{category.meta('category_icon').url}}" class="img img-fluid" style="width: 30px;">
+                    </div>
+                    <div class="col-9 col-md-9 tour-name">
+                        <h4>  {{category.title}}</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,4 @@
+{% for post in posts %}
+    {% include ['item/'~post.post_type~'-'~template~'.twig','item/'~post.post_type~'.twig', 'item/default.twig'] %}
+{% endfor %}
+{% include 'collection/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
