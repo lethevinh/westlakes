@@ -79,6 +79,19 @@
             nav: true,
             navigationText: ["<img src='"+themeUrl+"/assets/images/prev.png'>", "<img src='"+themeUrl+"/assets/images/next.png'>"]
         });
+        $(".owl-carousel-portfolio").owlCarousel({
+            items: 3,
+            itemsDesktop: [1000, 3],
+            itemsDesktopSmall: [980, 2],
+            itemsTablet: [768, 2],
+            itemsMobile: [650, 1],
+            pagination: false,
+            navigation: true,
+            slideSpeed: 1000,
+            autoPlay: false,
+            nav: true,
+            navigationText: ["<img src='"+themeUrl+"/assets/images/prev.png'>", "<img src='"+themeUrl+"/assets/images/next.png'>"]
+        });
         $("#work-slider-3").owlCarousel({
             items: 3,
             itemsDesktop: [1000, 3],

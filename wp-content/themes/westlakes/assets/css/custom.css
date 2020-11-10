@@ -185,15 +185,15 @@ strong,
 .text-green {
     color: #7e9f44;
 }
-
+.section-title h1,
+.single_feature h2,
 .header-title {
     padding-top: 30px;
-    font-size: 1.5rem !important;
-    font-weight: bold !important;
-    /*border-bottom: 1px solid #f15552;*/
+    font-size: 1.5rem;
     width: fit-content;
     position: relative;
     text-transform: initial !important;
+    font-family: "UTM AvoBold",sans-serif;
 }
 
 .testimonial-area .header-title::after {
@@ -209,8 +209,12 @@ strong,
     bottom: 0;
     left: -28%;
 }
-#feature_1111 .header-title::after {
+.inline-red.header-title::after {
+    background-color: red;
+}
+.inline-l-0.header-title::after {
     left: 0;
+    width: 120%;
 }
 .no-padding {
     padding: 0;
@@ -758,6 +762,9 @@ img.lazy[data-src] {
 ul.ul-white li .ti-check-box {
     color: white;
 }
+ul.ul-green li .ti-check-box {
+    color: #d39f72;
+}
 
 .feature_area_check ul.check-yellow li .ti-check-box {
     color: #daa982;
@@ -774,12 +781,24 @@ ul.ul-white li .ti-check-box {
 }
 
 .khungtrang div p {
-    background-color: #cd5a38;
+    background-color: #7e9f3c;
     margin-bottom: 5px;
     color: white;
     font-family: 'UTM AvoBold', sans-serif;
+    width: 100%;
+    font-size: 0.8rem;
 }
-
+.section-title h1.header-title.title-sub,
+.section-title .header-title.title-sub{
+    font-size: 1.4rem;
+}
+.section-title .header-title.title-sub::after{
+    width: 80%;
+    left: 10%;
+}
+.single_portfolio .box{
+    height: auto;
+}
 .feature_area_check .header-title::after {
     /*width: 115%;*/
     height: 1px;
