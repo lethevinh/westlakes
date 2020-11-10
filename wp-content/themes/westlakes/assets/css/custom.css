@@ -1,21 +1,21 @@
 @font-face {
     font-family: UTM Avo;
-    src: url('../fonts/UTM Avo.ttf');
+    src: url('../fonts/UTM_Avo.ttf');
 }
 
 @font-face {
     font-family: UTM AvoBold;
-    src: url('../fonts/UTM AvoBold.ttf');
+    src: url('../fonts/UTM_AvoBold.ttf');
 }
 
 @font-face {
     font-family: UTM AvoBold_Italic;
-    src: url('../fonts/UTM AvoBold_Italic.ttf');
+    src: url('../fonts/UTM_AvoBold_Italic.ttf');
 }
 
 @font-face {
     font-family: UTM AvoItalic;
-    src: url('../fonts/UTM AvoItalic.ttf');
+    src: url('../fonts/UTM_AvoItalic.ttf');
 }
 
 button,

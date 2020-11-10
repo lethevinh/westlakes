@@ -94,6 +94,13 @@ class PostType {
             'menu_icon' => !empty($type['menu']) ? $type['menu'] : 'dashicons-images-alt2',
 			'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'),
 		);
+		if (isset($type['api']) && $type['api']) {
+		    $args = array_merge([
+                'rest_base'             => $type['slug'],
+                'show_in_rest'          => true,
+                'rest_controller_class' => 'WP_REST_Posts_Controller',
+            ], $args);
+        }
 		register_post_type($type['name'], $args);
 	}
 

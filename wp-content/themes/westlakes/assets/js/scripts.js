@@ -1,8 +1,3 @@
-/*
-Author       : themes_master
-Template Name: Lalvai - Landing Page HTML Template
-Version      : 1.0
-*/
 (function($) {
     'use strict';
 
@@ -169,10 +164,20 @@ Version      : 1.0
         }
     });
     $('.btn-register-a').click(function(e) {
+        e.stopPropagation();
+        e.preventDefault();
         let form = $(this).parents('form');
         let data = form.serializeArray();
         if (data.every(item => item.value)) {
-            $.post('/', data)
+            let a = {};
+            $.each(data, function (i, field) {
+                a[field.name] = field.value;
+            });
+            let url = '/forms/register?';
+            url += 'fullname=' + a.Name;
+            url += '&email=' + a.Email;
+            url += '&phone=' + a.Phone;
+            $.post(url, data)
                 .done(function() {
                     // alert("second success");
                 })

@@ -1,3 +1,23 @@
 [
-
+  {
+    "name": "register",
+    "slug": "register",
+    "menu": "dashicons-images-alt2",
+    "label": "Form Đăng Ký",
+    "api": true,
+    "fields" : {
+      "fullname": {
+        "type": "text",
+        "label": "FullName"
+      },
+      "email": {
+        "type": "text",
+        "label": "Email"
+      },
+      "phone": {
+        "type": "text",
+        "label": "Phone"
+      }
+    }
+  }
 ]
