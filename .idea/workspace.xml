@@ -21,7 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="304119ec-40a2-477e-ac37-42f8d0cd07ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/sections/analytic.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/sections/analytic.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/images/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/images/10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/images/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/images/11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/images/testimonial-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/images/testimonial-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/archives/blog.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/archives/blog.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/pages/home.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/pages/home.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/sections/header.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/sections/header.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +91,8 @@
       <workItem from="1604980505756" duration="2513000" />
       <workItem from="1605006654388" duration="6677000" />
       <workItem from="1605021205208" duration="9000" />
-      <workItem from="1605250245203" duration="169000" />
+      <workItem from="1605250245203" duration="316000" />
+      <workItem from="1605266902453" duration="5433000" />
     </task>
     <servers />
   </component>

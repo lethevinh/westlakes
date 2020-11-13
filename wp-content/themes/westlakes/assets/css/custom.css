@@ -86,7 +86,7 @@ strong,
 }
 
 .home_bg {
-    /*height: 850px;*/
+    height: 100vh;
 }
 
 .wrapper-border .wrapper-border {
@@ -194,8 +194,12 @@ strong,
     position: relative;
     text-transform: initial !important;
     font-family: "UTM AvoBold",sans-serif;
+    line-height: 1.8em;
 }
-
+.inline-w-80.header-title::after{
+    width: 80%;
+    left: 10%;
+}
 .testimonial-area .header-title::after {
     background-color: #fcc252;
 }
@@ -210,7 +214,7 @@ strong,
     left: -28%;
 }
 .inline-red.header-title::after {
-    background-color: red;
+    background-color: red !important;
 }
 .inline-l-0.header-title::after {
     left: 0;
@@ -827,8 +831,9 @@ ul.ul-green li .ti-check-box {
 }
 
 .single_feature_444.single_feature ul li {
-    margin-bottom: 0.3rem;
-    line-height: 1.9rem;
+    margin-bottom: 1.4rem;
+    line-height: 2em;
+    font-size: 1.2em;
 }
 
 .header-title_111.header-title::after {
@@ -977,7 +982,11 @@ ul.ul-green li .ti-check-box {
 .bg-grad {
     background-color: #eedbd2;
 }
-
+.bg-linear-gradient{
+    /*background: rgb(79,121,44);*/
+    /*background: linear-gradient(351deg, rgba(79,121,44,1) 0%, rgba(123,155,60,1) 100%);*/
+    background-image: linear-gradient(#517a2d, #7b9b3c);
+}
 .bg-grad {
     color: #606060;
 }
