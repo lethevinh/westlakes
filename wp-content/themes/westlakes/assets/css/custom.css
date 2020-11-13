@@ -864,11 +864,16 @@ ul.ul-green li .ti-check-box {
 
 @media (max-width: 767px) {
     .header-title::after {
+        width: 100%;
+        display: none;
+    }
+    .header-title::after {
         background-color: transparent !important;
     }
 
     .header-title {
         font-size: 1.4rem !important;
+        text-align: center;
     }
 
     .single_feature_111 h2 {
