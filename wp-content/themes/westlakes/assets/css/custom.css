@@ -29,7 +29,7 @@ span,
 p,
 body {
     font-family: 'UTM Avo', sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 body {
@@ -831,7 +831,7 @@ ul.ul-green li .ti-check-box {
 }
 
 .single_feature_444.single_feature ul li {
-    /*margin-bottom: 1.4rem;*/
+    margin-bottom: 1.2rem;
     line-height: 2em;
     font-size: 1.2em;
 }

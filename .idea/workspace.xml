@@ -22,8 +22,6 @@
     <list default="true" id="304119ec-40a2-477e-ac37-42f8d0cd07ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/images/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/images/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/images/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/images/11.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/pages/home.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/pages/home.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/sections/header.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/sections/header.twig" afterDir="false" />
     </list>
@@ -91,7 +89,7 @@
       <workItem from="1605021205208" duration="9000" />
       <workItem from="1605250245203" duration="316000" />
       <workItem from="1605266902453" duration="5670000" />
-      <workItem from="1605318303285" duration="1404000" />
+      <workItem from="1605318303285" duration="2126000" />
     </task>
     <servers />
   </component>
@@ -127,10 +125,11 @@
       <screen x="0" y="23" width="1680" height="979" />
     </state>
     <state x="325" y="139" width="1240" height="677" key="DiffContextDialog/0.23.1680.979@0.23.1680.979" timestamp="1604982179903" />
-    <state x="394" y="44" key="RollbackChangesDialog" timestamp="1604981985031">
-      <screen x="0" y="23" width="1680" height="979" />
+    <state x="394" y="46" key="RollbackChangesDialog" timestamp="1605320359885">
+      <screen x="0" y="25" width="1680" height="971" />
     </state>
     <state x="394" y="44" key="RollbackChangesDialog/0.23.1680.979@0.23.1680.979" timestamp="1604981985031" />
+    <state x="394" y="46" key="RollbackChangesDialog/0.25.1680.971@0.25.1680.971" timestamp="1605320359885" />
     <state x="712" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604747303479">
       <screen x="0" y="23" width="1680" height="979" />
     </state>
