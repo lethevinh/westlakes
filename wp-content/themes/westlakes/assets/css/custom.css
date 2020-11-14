@@ -62,7 +62,37 @@ strong,
     margin-top: 100px;
     /*width: 350px;*/
 }
+.register.modal-content {
+    min-width: 350px;
+    position: relative;
+}
+.register button.close {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    right: 8px;
+}
+.register .modal-title{
+    color: white;
+}
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
 
+.video-wrapper iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .hero-text {
     padding-top: 50px;
 }

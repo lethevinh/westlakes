@@ -8,6 +8,15 @@
             // $('.spinner').fadeOut();
             // $('.preloader').delay(350).fadeOut('slow');
             // $('#modalPopup').modal('show');
+            /*setTimeout(function (){
+                $('#modalPopup').modal('show');
+            }, 15000);*/
+            setTimeout(function (){
+                $('#exampleModal').modal('show');
+            }, 30000);
+            setTimeout(function (){
+                $('#exampleModal').modal('show');
+            }, 60000);
         });
         /*END PRELOADER JS*/
         $('.lazy').lazy({ placeholder: '', defaultImage: '' });
@@ -205,7 +214,7 @@
             e.preventDefault();
         }
     });
-    particlesJS('particles-js',
+   /* particlesJS('particles-js',
 
         {
             "particles": {
@@ -324,5 +333,5 @@
             }
         }
 
-    );
+    );*/
 })(jQuery);

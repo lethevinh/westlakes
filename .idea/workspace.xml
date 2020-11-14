@@ -22,8 +22,10 @@
     <list default="true" id="304119ec-40a2-477e-ac37-42f8d0cd07ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/assets/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/archives/blog.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/archives/blog.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/pages/home.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/pages/home.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/sections/footer.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/sections/footer.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,8 @@
       <workItem from="1605021205208" duration="9000" />
       <workItem from="1605250245203" duration="316000" />
       <workItem from="1605266902453" duration="5670000" />
-      <workItem from="1605318303285" duration="2609000" />
+      <workItem from="1605318303285" duration="2782000" />
+      <workItem from="1605362104771" duration="3209000" />
     </task>
     <servers />
   </component>
