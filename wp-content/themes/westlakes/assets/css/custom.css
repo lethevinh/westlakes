@@ -831,7 +831,7 @@ ul.ul-green li .ti-check-box {
 }
 
 .single_feature_444.single_feature ul li {
-    margin-bottom: 1.4rem;
+    /*margin-bottom: 1.4rem;*/
     line-height: 2em;
     font-size: 1.2em;
 }
