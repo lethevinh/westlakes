@@ -12,10 +12,10 @@
                 $('#modalPopup').modal('show');
             }, 15000);*/
             setTimeout(function (){
-                $('#exampleModal').modal('show');
+                $('#exampleModal[aria-hidden="true"]').modal('show');
             }, 30000);
             setTimeout(function (){
-                $('#exampleModal').modal('show');
+                $('#exampleModal[aria-hidden="true"]').modal('show');
             }, 60000);
         });
         /*END PRELOADER JS*/
