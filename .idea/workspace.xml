@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="304119ec-40a2-477e-ac37-42f8d0cd07ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/snippets/foot.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/snippets/foot.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/archives/blog.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/westlakes/src/views/archives/blog.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,8 @@
       <workItem from="1605250245203" duration="316000" />
       <workItem from="1605266902453" duration="5670000" />
       <workItem from="1605318303285" duration="2782000" />
-      <workItem from="1605362104771" duration="3570000" />
+      <workItem from="1605362104771" duration="3892000" />
+      <workItem from="1605421385061" duration="270000" />
     </task>
     <servers />
   </component>
