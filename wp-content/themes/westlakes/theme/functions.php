@@ -378,7 +378,7 @@ class StarterSite extends Timber\Site {
 	}
 
 	function enqueue_multiple() {
-	    $requireJs = ['jquery', 'jquery-ui-tabs', 'jquery-ui-sortable', 'jquery-ui-mouse', 'jquery-ui-accordion', 'jquery-ui-widget'];
+	    $requireJs = ['jquery', 'jquery-ui-tabs', 'jquery-ui-sortable', 'jquery-ui-mouse', 'jquery-ui-accordion', 'jquery-ui-widget','jquery-ui-droppable','jquery-ui-tooltip'];
 		foreach ($requireJs as $js) {
             wp_enqueue_script($js);
         }
