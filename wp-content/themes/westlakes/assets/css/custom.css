@@ -773,7 +773,27 @@ img.lazy[data-src] {
     animation: animatedgradient 3s ease alternate infinite;
     background-size: 300% 300%;
 }
-
+.next-section {
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px;
+    font-size: 60px;
+    text-shadow: #030303 0px 4px 4px;
+    z-index: 99;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 1.5s !important;
+    animation-duration: 1.5s !important;
+}
 
 @keyframes animatedgradient {
     0% {
