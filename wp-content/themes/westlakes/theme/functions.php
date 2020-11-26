@@ -273,7 +273,8 @@ class StarterSite extends Timber\Site {
             return array_merge ( $columns, array (
                 'fullname' => __ ( 'FullName' ),
                 'email'   => __ ( 'Email' ),
-                'phone'   => __ ( 'Phone' )
+                'phone'   => __ ( 'Phone' ),
+                'date'   => __ ( 'Date Register' )
             ) );
         }
         function register_columns_book_content($column_name, $post_ID) {
