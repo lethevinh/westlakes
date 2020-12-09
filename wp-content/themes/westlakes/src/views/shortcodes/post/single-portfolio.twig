@@ -1,8 +1,10 @@
 {% for post in posts %}
 <div class="single_portfolio">
-    <div class="box">
-        <img src="{{ post.thumbnail.src }}" alt="">
-    </div>
+    <a href="{{ post.link }}">
+        <div class="box">
+            <img src="{{ post.thumbnail.src }}" alt="">
+        </div>
+    </a>
     <a href="{{ post.link }}">
         <p class="text-white">
             {{ post.title }}

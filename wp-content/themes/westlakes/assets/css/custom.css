@@ -1364,6 +1364,10 @@ p {
     .m-ss-2 {
         margin: 2px;
     }
+    .detail-news img,
+    .detail-news .wp-block-image img{
+        height: auto;
+    }
 }
 
 @media not all and (min-resolution:.001dpcm) {
